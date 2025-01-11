@@ -4,6 +4,7 @@ import userImg from '../assets/userAsset/profile-pic.png';
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import resume from '../assets/userAsset/sandeep-cv.pdf'
+import Spline from '@splinetool/react-spline';
 
 
 export const HeroSection = () => {
@@ -22,9 +23,9 @@ export const HeroSection = () => {
     <div id='about' className=" flex flex-col sm:flex-row justify-between w-[95%] sm:w-11/12 mt-4 items-center text-center sm:text-start">
 
       <div className="flex flex-col gap-3 w-full items-center sm:items-start sm:w-[60%]">
-        <div className=" text-[2em]">Greetings!</div>
+        <div className=" text-[2em] z-10">Greetings!</div>
 
-        <div className="flex flex-col sm:flex-row gap-2">
+        <div className="flex flex-col sm:flex-row gap-2 z-10">
           <p className='text-[1.8em]'>I am a </p>
           <TypeAnimation
             sequence={[
@@ -46,7 +47,7 @@ export const HeroSection = () => {
           />
         </div>
 
-        <div className="">
+        <div className="z-10">
           Web developer and programmer with experience in MERN stack and
           C++. Proven ability to design, develop, and deliver high-quality
           web applications. Expertise in all aspects of the web development
@@ -55,7 +56,7 @@ export const HeroSection = () => {
           independently and as part of a team.
         </div>
 
-        <div className='flex gap-4 items-center justify-start text-white'>
+        <div className='flex gap-4 items-center justify-start text-white z-10'>
           <div className="py-1 px-2 rounded-md bg-orange-600 w-fit cursor-pointer drop-shadow-xl hover:scale-95 transition-all" id="btn">
             <a href="mailto:sandeepkv233@gmail.com">
               Hire me
@@ -70,10 +71,16 @@ export const HeroSection = () => {
           </button>
 
         </div>
+        
+        <div className=' absolute h-[50%] w-[100%] left-0 top-0'>
+          <Spline scene="https://prod.spline.design/zl9PLlOp7qPBjXI6/scene.splinecode"/>
+        </div>
+        
+
       </div>
 
       {/* porfile card */}
-      <div className='mt-3 sm:mt-0'>
+      <div className='mt-3 sm:mt-0 z-10'>
         <div className=" max-w-fit glassmorphism rounded-sm relative">
           <div className="flex sm:flex-col items-center p-4">
             <img src={userImg}

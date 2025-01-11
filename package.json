@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@codaworks/react-glow": "^1.0.6",
+    "@splinetool/react-spline": "^4.0.0",
+    "@splinetool/runtime": "^1.9.59",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",

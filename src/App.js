@@ -28,7 +28,7 @@ function App() {
       <div id='home' className= {`flex flex-col gap-3 items-center ${bgColor} ${textColor} `} >
         <NavBar setMode={setMode} mode={mode}/>
         <HeroSection/>
-        <Project/>
+        <Project className=' z-10'/>
         <MeAndStack/>
         <ContactMe/>
         <FooterSection/>
